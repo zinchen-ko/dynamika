@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+</head>
+<body>
+<h1>Library Management System</h1>
+
+<h2>Books</h2>
+<table>
+    <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>ISBN</th>
+        <th>Action</th>
+    </tr>
+    <!-- Books list will be dynamically populated here -->
+</table>
+
+<h2>Add/Edit Book</h2>
+<form id="bookForm">
+    <label for="title">Title:</label><br>
+    <input type="text" id="title" name="title"><br>
+    <label for="author">Author:</label><br>
+    <input type="text" id="author" name="author"><br>
+    <label for="isbn">ISBN:</label><br>
+    <input type="text" id="isbn" name="isbn"><br><br>
+    <input type="submit" value="Submit">
+</form>
+
+<h2>Clients</h2>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Date of Birth</th>
+        <th>Action</th>
+    </tr>
+    <!-- Clients list will be dynamically populated here -->
+</table>
+
+<h2>Add/Edit Client</h2>
+<form id="clientForm">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name"><br>
+    <label for="dob">Date of Birth:</label><br>
+    <input type="date" id="dob" name="dob"><br><br>
+    <input type="submit" value="Submit">
+</form>
+
+<h2>Borrow Book</h2>
+<form id="borrowForm">
+    <label for="client">Select Client:</label><br>
+    <select id="client" name="client">
+        <!-- Client options will be dynamically populated here -->
+    </select><br>
+    <label for="book">Select Book:</label><br>
+    <select id="book" name="book">
+        <!-- Book options will be dynamically populated here -->
+    </select><br><br>
+    <input type="submit" value="Submit">
+</form>
+
+<script>
+    // JavaScript logic for handling form submissions and dynamic population of lists goes here
+</script>
+</body>
+</html>
